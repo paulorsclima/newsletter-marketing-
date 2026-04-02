@@ -1,232 +1,117 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Marketing</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background: #f5f6fa; padding-top: 60px; }
+        
+        /* Novo Menu de Navegação */
+        .navbar {
+            background: #111;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-sizing: border-box;
+        }
+        .nav-links { list-style: none; display: flex; margin: 0; padding: 0; }
+        .nav-links li { margin-left: 20px; }
+        .nav-links a { color: white; text-decoration: none; font-weight: bold; transition: 0.3s; }
+        .nav-links a:hover { color: #ff7a00; }
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        header { background: #1c2a48; color: white; padding: 60px 20px; text-align: center; }
+        header h1 { margin: 0; font-size: 38px; }
+        header p { margin-top: 10px; font-size: 18px; }
 
-<title>Newsletter Marketing</title>
+        .propaganda { display: flex; justify-content: center; flex-wrap: wrap; gap: 30px; padding: 60px 20px; }
+        .card { background: white; width: 280px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); padding: 20px; text-align: center; }
+        .card img { width: 100%; border-radius: 8px; }
+        .card h3 { margin-top: 15px; }
 
-<style>
+        .graficos { background: white; text-align: center; padding: 60px 20px; }
+        .graficos img { width: 300px; margin: 20px; }
 
-body{
-font-family: Arial, sans-serif;
-margin:0;
-background:#f5f6fa;
-}
-
-header{
-background:#1c2a48;
-color:white;
-padding:60px 20px;
-text-align:center;
-}
-
-header h1{
-margin:0;
-font-size:38px;
-}
-
-header p{
-margin-top:10px;
-font-size:18px;
-}
-
-.propaganda{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-gap:30px;
-padding:60px 20px;
-}
-
-.card{
-background:white;
-width:280px;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-padding:20px;
-text-align:center;
-}
-
-.card img{
-width:100%;
-border-radius:8px;
-}
-
-.card h3{
-margin-top:15px;
-}
-
-.graficos{
-background:white;
-text-align:center;
-padding:60px 20px;
-}
-
-.graficos img{
-width:300px;
-margin:20px;
-}
-
-.newsletter{
-background:#1c2a48;
-color:white;
-text-align:center;
-padding:60px 20px;
-}
-
-form{
-max-width:400px;
-margin:auto;
-display:flex;
-flex-direction:column;
-gap:12px;
-}
-
-input, textarea{
-padding:12px;
-border:none;
-border-radius:5px;
-font-size:14px;
-}
-
-textarea{
-height:100px;
-resize:none;
-}
-
-button{
-background:#ff7a00;
-border:none;
-color:white;
-padding:14px;
-font-size:16px;
-border-radius:5px;
-cursor:pointer;
-}
-
-button:hover{
-background:#ff5a00;
-}
-
-footer{
-background:#111;
-color:#bbb;
-text-align:center;
-padding:20px;
-font-size:14px;
-}
-
-</style>
-
+        .newsletter { background: #1c2a48; color: white; text-align: center; padding: 60px 20px; }
+        form { max-width: 400px; margin: auto; display: flex; flex-direction: column; gap: 12px; }
+        input, textarea { padding: 12px; border: none; border-radius: 5px; font-size: 14px; }
+        textarea { height: 100px; resize: none; }
+        button { background: #ff7a00; border: none; color: white; padding: 14px; font-size: 16px; border-radius: 5px; cursor: pointer; }
+        button:hover { background: #ff5a00; }
+        footer { background: #111; color: #bbb; text-align: center; padding: 20px; font-size: 14px; }
+    </style>
 </head>
-
 <body>
 
-<header>
+    <nav class="navbar">
+        <div class="logo">🚀 Marketing Pro</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+        </ul>
+    </nav>
 
-<h1>Turbine seus Resultados em Marketing Digital</h1>
+    <header>
+        <h1>Turbine seus Resultados em Marketing Digital</h1>
+        <p>Campanhas inteligentes, anúncios eficientes e crescimento real para sua empresa</p>
+    </header>
 
-<p>Campanhas inteligentes, anúncios eficientes e crescimento real para sua empresa</p>
+    <section class="propaganda">
+        <div class="card">
+            <img src="images/anuncio.jpg">
+            <h3>Anúncios Otimizados</h3>
+            <p>Criamos campanhas focadas em gerar mais clientes.</p>
+        </div>
+        <div class="card">
+            <img src="images/campanha.jpg">
+            <h3>Gestão de Campanhas</h3>
+            <p>Controle completo de tráfego pago e conversão.</p>
+        </div>
+        <div class="card">
+            <img src="images/redes.jpg">
+            <h3>Redes Sociais</h3>
+            <p>Estratégias para aumentar seu alcance e engajamento.</p>
+        </div>
+    </section>
 
-</header>
+    <section class="graficos">
+        <h2>Nossos Resultados</h2>
+        <img src="images/grafico1.png">
+        <img src="images/grafico2.png">
+        <p>Mais de <strong>300% de crescimento médio</strong> nas campanhas dos nossos clientes.</p>
+    </section>
 
+    <section class="newsletter">
+        <h2>Entre em Contato</h2>
+        <p>Preencha o formulário abaixo e nossa equipe retornará.</p>
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSfTCOhpc98RjlMlf1FRbzKskBbIQPLB1ZqY152FMLhjDEbzYA/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+            <input type="text" name="entry.696891029" placeholder="Seu nome" required>
+            <input type="email" name="entry.2140919754" placeholder="Seu e-mail" required>
+            <input type="tel" name="entry.523780169" placeholder="Seu telefone">
+            <textarea name="entry.177158400" placeholder="Sua mensagem"></textarea>
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+        <iframe name="hidden_iframe" style="display:none;"></iframe>
+    </section>
 
-<section class="propaganda">
+    <footer>© 2026 - Agência de Marketing Digital</footer>
 
-<div class="card">
-<img src="images/anuncio.jpg">
-<h3>Anúncios Otimizados</h3>
-<p>Criamos campanhas focadas em gerar mais clientes.</p>
-</div>
-
-<div class="card">
-<img src="images/campanha.jpg">
-<h3>Gestão de Campanhas</h3>
-<p>Controle completo de tráfego pago e conversão.</p>
-</div>
-
-<div class="card">
-<img src="images/redes.jpg">
-<h3>Redes Sociais</h3>
-<p>Estratégias para aumentar seu alcance e engajamento.</p>
-</div>
-
-</section>
-
-
-<section class="graficos">
-
-<h2>Nossos Resultados</h2>
-
-<img src="images/grafico1.png">
-
-<img src="images/grafico2.png">
-
-<p>Mais de <strong>300% de crescimento médio</strong> nas campanhas dos nossos clientes.</p>
-
-</section>
-
-
-<section class="newsletter">
-
-<h2>Entre em Contato</h2>
-
-<p>Preencha o formulário abaixo e nossa equipe retornará.</p>
-
-<form
-action="https://docs.google.com/forms/d/e/1FAIpQLSfTCOhpc98RjlMlf1FRbzKskBbIQPLB1ZqY152FMLhjDEbzYA/formResponse"
-method="POST"
-target="hidden_iframe"
-onsubmit="submitted=true;">
-
-<input type="text" name="entry.696891029" placeholder="Seu nome" required>
-
-<input type="email" name="entry.2140919754" placeholder="Seu e-mail" required>
-
-<input type="tel" name="entry.523780169" placeholder="Seu telefone">
-
-<textarea name="entry.177158400" placeholder="Sua mensagem"></textarea>
-
-<button type="submit">Enviar Mensagem</button>
-
-</form>
-
-<iframe name="hidden_iframe" style="display:none;"></iframe>
-
-</section>
-
-
-<footer>
-
-© 2026 - Agência de Marketing Digital
-
-</footer>
-
-
-<script>
-
-let submitted = false;
-
-document.querySelector("form").addEventListener("submit", function(){
-
-setTimeout(function(){
-
-if(submitted){
-
-alert("Mensagem enviada com sucesso! Em breve entraremos em contato.");
-
-document.querySelector("form").reset();
-
-}
-
-},1000);
-
-});
-
-</script>
-
+    <script>
+        let submitted = false;
+        document.querySelector("form").addEventListener("submit", function(){
+            setTimeout(function(){
+                if(submitted){
+                    alert("Mensagem enviada com sucesso! Em breve entraremos em contato.");
+                    document.querySelector("form").reset();
+                }
+            },1000);
+        });
+    </script>
 </body>
 </html>
